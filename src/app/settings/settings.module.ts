@@ -4,6 +4,7 @@ import {RouterModule} from '@angular/router';
 import { MainSettingsComponent } from './main-settings/main-settings.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
 import {ContentModule} from './content/content.module';
+import {LogModule} from './log/log.module';
 
 @NgModule({
   declarations: [MainSettingsComponent, UserSettingsComponent],
@@ -19,7 +20,8 @@ import {ContentModule} from './content/content.module';
         component: UserSettingsComponent
       },
     ]),
-    ContentModule
+    ContentModule,
+    LogModule
   ]
 })
 export class SettingsModule { }
